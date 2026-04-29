@@ -5,21 +5,25 @@
 </h1>
 
 <p align="center">
-    <strong>🏆&nbsp; A ranked list of algorithmic trading open-source libraries, frameworks, bots, tools, books, communities, education materials. Updated weekly.</strong>
+    <strong>🏆 A ranked list of open-source algorithmic trading projects—bots, frameworks, APIs, indicators, books, courses, and communities—kept up to date on a regular schedule.</strong>
 </p>
 
 <p align="center">
     <a href="https://best-of.org" title="Best-of Badge"><img src="http://bit.ly/3o3EHNN"></a>
-    <a href="#Contents" title="Project Count"><img src="https://img.shields.io/badge/projects-100-blue.svg?color=5ac4bf"></a>
-    <a href="#Contribution" title="Contributions are welcome"><img src="https://img.shields.io/badge/contributions-welcome-green.svg"></a>
-    <a href="https://github.com/merovinh/best-of-algorithmic-trading/releases" title="Best-of Updates"><img src="https://img.shields.io/github/release-date/merovinh/best-of-algorithmic-trading?color=green&label=updated"></a>
+    <a href="#contents" title="Project count"><img src="https://img.shields.io/badge/projects-109-blue.svg?color=5ac4bf"></a>
+    <a href="#contribution" title="Contributions welcome"><img src="https://img.shields.io/badge/contributions-welcome-green.svg"></a>
+    <a href="https://github.com/merovinh/best-of-algorithmic-trading/releases" title="Last update"><img src="https://img.shields.io/github/release-date/merovinh/best-of-algorithmic-trading?color=green&label=updated"></a>
 </p>
 
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua/)
 
-This curated list contains 100 awesome open-source projects with a total of 310K stars grouped into 7 categories. All projects are ranked by a project-quality score, which is calculated based on various metrics automatically collected from GitHub and different package managers. If you like to add or update projects, feel free to open an [issue](https://github.com/merovinh/best-of-algorithmic-trading/issues/new/choose), submit a [pull request](https://github.com/merovinh/best-of-algorithmic-trading/pulls), or directly edit the [projects.yaml](https://github.com/merovinh/best-of-algorithmic-trading/edit/main/projects.yaml). Contributions are very welcome!
+**What you get:** **109** curated projects across **7** categories, with roughly **310K** combined GitHub stars. Rankings use an automated **quality score** built from GitHub activity, package-manager stats, and other public signals (see the [best-of generator](https://github.com/best-of-lists/best-of-generator) ecosystem for details).
 
-> 🧙‍♂️  Discover other [best-of lists](https://best-of.org) or [create your own](https://github.com/best-of-lists/best-of/blob/main/create-best-of-list.md).
+**How to use this list:** Browse by category below, follow the links to projects you care about, and always verify licenses and activity before depending on something in production.
+
+**Want to suggest a project?** Open an [issue](https://github.com/merovinh/best-of-algorithmic-trading/issues/new/choose), send a [pull request](https://github.com/merovinh/best-of-algorithmic-trading/pulls), or edit [`projects.yaml`](https://github.com/merovinh/best-of-algorithmic-trading/edit/main/projects.yaml) directly. Contributions are welcome.
+
+> Discover more [best-of lists](https://best-of.org) or [create your own](https://github.com/best-of-lists/best-of/blob/main/create-best-of-list.md).
 
 ## Contents
 
@@ -428,21 +432,30 @@ This curated list contains 100 awesome open-source projects with a total of 310K
 
 ---
 
-## Related Resources
+## Related resources
 
-- [**Best-of lists**](https://best-of.org): Discover other best-of lists with awesome open-source projects on all kinds of topics.
+- [**Best-of.org**](https://best-of.org): More ranked lists of open-source projects across many topics.
 
 ## Contribution
 
-Contributions are encouraged and always welcome! If you like to add or update projects, choose one of the following ways:
+Contributions are encouraged. You can:
 
-- Open an issue by selecting one of the provided categories from the [issue page](https://github.com/merovinh/best-of-algorithmic-trading/issues/new/choose) and fill in the requested information.
-- Modify the [projects.yaml](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/projects.yaml) with your additions or changes, and submit a pull request. This can also be done directly via the [Github UI](https://github.com/merovinh/best-of-algorithmic-trading/edit/main/projects.yaml).
+- Use the [issue templates](https://github.com/merovinh/best-of-algorithmic-trading/issues/new/choose) to propose additions or corrections.
+- Edit [`projects.yaml`](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/projects.yaml) and open a pull request (or use the [GitHub web editor](https://github.com/merovinh/best-of-algorithmic-trading/edit/main/projects.yaml)).
 
-If you like to contribute to or share suggestions regarding the project metadata collection or markdown generation, please refer to the [best-of-generator](https://github.com/best-of-lists/best-of-generator) repository. If you like to create your own best-of list, we recommend to follow [this guide](https://github.com/best-of-lists/best-of/blob/main/create-best-of-list.md).
+Metadata and markdown generation use the [best-of-generator](https://github.com/best-of-lists/best-of-generator) family of tools. Guidelines: [CONTRIBUTING.md](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/.github/CODE_OF_CONDUCT.md).
 
-For more information on how to add or update projects, please read the [contribution guidelines](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/CONTRIBUTING.md). By participating in this project, you agree to abide by its [Code of Conduct](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/.github/CODE_OF_CONDUCT.md).
+### For maintainers (TypeScript checks)
+
+This repo includes a small **TypeScript** validator for `projects.yaml` (schema, categories, labels, duplicate IDs). After cloning:
+
+```bash
+npm install
+npm run check   # compile + validate projects.yaml
+```
+
+CI runs the same check on relevant changes. Fixing validation errors before merging keeps the list consistent.
 
 ## License
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![CC BY-SA](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

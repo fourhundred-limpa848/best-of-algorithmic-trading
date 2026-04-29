@@ -1,21 +1,30 @@
 
 ---
 
-## Related Resources
+## Related resources
 
-- [**Best-of lists**](https://best-of.org): Discover other best-of lists with awesome open-source projects on all kinds of topics.
+- [**Best-of.org**](https://best-of.org): More ranked lists of open-source projects across many topics.
 
 ## Contribution
 
-Contributions are encouraged and always welcome! If you like to add or update projects, choose one of the following ways:
+Contributions are encouraged. You can:
 
-- Open an issue by selecting one of the provided categories from the [issue page](https://github.com/merovinh/best-of-algorithmic-trading/issues/new/choose) and fill in the requested information.
-- Modify the [projects.yaml](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/projects.yaml) with your additions or changes, and submit a pull request. This can also be done directly via the [Github UI](https://github.com/merovinh/best-of-algorithmic-trading/edit/main/projects.yaml).
+- Use the [issue templates](https://github.com/merovinh/best-of-algorithmic-trading/issues/new/choose) to propose additions or corrections.
+- Edit [`projects.yaml`](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/projects.yaml) and open a pull request (or use the [GitHub web editor](https://github.com/merovinh/best-of-algorithmic-trading/edit/main/projects.yaml)).
 
-If you like to contribute to or share suggestions regarding the project metadata collection or markdown generation, please refer to the [best-of-generator](https://github.com/best-of-lists/best-of-generator) repository. If you like to create your own best-of list, we recommend to follow [this guide](https://github.com/best-of-lists/best-of/blob/main/create-best-of-list.md).
+Metadata and markdown generation use the [best-of-generator](https://github.com/best-of-lists/best-of-generator) family of tools. Guidelines: [CONTRIBUTING.md](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/.github/CODE_OF_CONDUCT.md).
 
-For more information on how to add or update projects, please read the [contribution guidelines](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/CONTRIBUTING.md). By participating in this project, you agree to abide by its [Code of Conduct](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/.github/CODE_OF_CONDUCT.md).
+### For maintainers (TypeScript checks)
+
+This repo includes a small **TypeScript** validator for `projects.yaml` (schema, categories, labels, duplicate IDs). After cloning:
+
+```bash
+npm install
+npm run check   # compile + validate projects.yaml
+```
+
+CI runs the same check on relevant changes. Fixing validation errors before merging keeps the list consistent.
 
 ## License
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![CC BY-SA](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

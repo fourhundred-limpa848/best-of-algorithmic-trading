@@ -17,6 +17,9 @@ env:
 jobs:
   update-best-of-list:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - if: ${{ github.event.inputs != null  &&  github.event.inputs.version != null }}
         name: set-version-from-input
@@ -61,13 +64,15 @@ jobs:
       - name: create-pull-request
         shell: bash
         run: |
-          # Stops script execution if a command has an error
           set -e
-          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.2
-          bin/hub pull-request -b ${{ env.DEFAULT_BRANCH }} -h ${{ env.BRANCH_PREFIX }}${{ env.VERSION  }} --no-edit -m "Best-of update: ${{ env.VERSION  }}" -m "To finish this update: Select <code>Merge pull request</code> below and <code>Confirm merge</code>. Also, make sure to publish the created draft release in the [releases section](../releases) as well." || true
-          rm bin/hub
+          gh pr create \
+            --base "${{ env.DEFAULT_BRANCH }}" \
+            --head "${{ env.BRANCH_PREFIX }}${{ env.VERSION }}" \
+            --title "Best-of update: ${{ env.VERSION }}" \
+            --body "To finish this update: Select <code>Merge pull request</code> below and <code>Confirm merge</code>. Also, make sure to publish the created draft release in the [releases section](../releases) as well." \
+            || true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: create-release
         uses: actions/create-release@v1
         env:

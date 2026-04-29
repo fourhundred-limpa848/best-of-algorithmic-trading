@@ -3,6 +3,8 @@
 
 Thanks for your interest in contributing to our project. This page will give you a quick overview of how things are organized and, most importantly, how to get involved. Everyone is welcome to contribute, and we value everybody's contribution.
 
+**If you edit [`projects.yaml`](https://github.com/merovinh/best-of-algorithmic-trading/blob/main/projects.yaml):** install [Node.js](https://nodejs.org/) 20+, then run **`npm install`** and **`npm run check`** in the repo root. That validates the YAML schema, categories, and labels locally before you open a pull request.
+
 ## Table of contents
 
 1. [Add a project](#add-a-project)
